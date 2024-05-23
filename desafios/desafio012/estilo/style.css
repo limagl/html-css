@@ -13,7 +13,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
 html,body {
@@ -47,10 +47,14 @@ a:hover {
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
+    padding: 30px; 
     line-height: 2em;
-    padding-left: 30px;
     font-family: var(--font-3);
     font-size: 3.5vw;
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 section.normal {
@@ -61,13 +65,26 @@ section.normal {
 section.imagem {
     background-color: rgba(0, 0, 0, 0.707);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(208, 160, 160, 0.312);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > p {
     display: inline-block;
     padding: 8px;
-    background-color: rgba(0, 0, 0, 0.414);
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 2px 1px 0px black;
 
+}
+
+section#img01 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url(../imagens/background002.jpg);
 }
 
 a {
